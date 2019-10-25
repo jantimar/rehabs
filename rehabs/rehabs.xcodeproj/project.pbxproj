@@ -28,6 +28,8 @@
 		A48EFA612363A2AD00B9574A /* HomeViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA602363A2AD00B9574A /* HomeViewModelProtocol.swift */; };
 		A48EFA632363A2EB00B9574A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA622363A2EB00B9574A /* HomeViewController.swift */; };
 		A48EFA652363A70E00B9574A /* BaseButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA642363A70E00B9574A /* BaseButton.swift */; };
+		A48EFA672363A8C600B9574A /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA662363A8C600B9574A /* UIImage+Extension.swift */; };
+		A48EFA692363B1A900B9574A /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA682363B1A900B9574A /* UIFont+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		A48EFA602363A2AD00B9574A /* HomeViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelProtocol.swift; sourceTree = "<group>"; };
 		A48EFA622363A2EB00B9574A /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		A48EFA642363A70E00B9574A /* BaseButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseButton.swift; sourceTree = "<group>"; };
+		A48EFA662363A8C600B9574A /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		A48EFA682363B1A900B9574A /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -170,6 +174,8 @@
 			isa = PBXGroup;
 			children = (
 				A48EFA5B2363666B00B9574A /* UIColor+Extension.swift */,
+				A48EFA662363A8C600B9574A /* UIImage+Extension.swift */,
+				A48EFA682363B1A900B9574A /* UIFont+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -281,8 +287,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				A48EFA612363A2AD00B9574A /* HomeViewModelProtocol.swift in Sources */,
+				A48EFA692363B1A900B9574A /* UIFont+Extension.swift in Sources */,
 				A48EFA542363659400B9574A /* BaseViewController.swift in Sources */,
 				A48EFA40236354D000B9574A /* ServiceFactory.swift in Sources */,
+				A48EFA672363A8C600B9574A /* UIImage+Extension.swift in Sources */,
 				A48EFA4823635D8000B9574A /* Exercise.swift in Sources */,
 				A48EFA1E236353BC00B9574A /* AppDelegate.swift in Sources */,
 				A48EFA5C2363666B00B9574A /* UIColor+Extension.swift in Sources */,

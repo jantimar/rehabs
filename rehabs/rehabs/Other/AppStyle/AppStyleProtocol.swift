@@ -14,10 +14,12 @@ protocol AppStyleProtocol {
 }
 
 protocol ColorsProtocol {
-	var primaryColor: UIColor { get }
-	var secondaryColor: UIColor { get }
+	var primary: UIColor { get }
+	var secondary: UIColor { get }
+	var title: UIColor { get }
 }
 
 protocol FontsProtocol {
-
+	var bigButton: UIFont { get }
+	var title: UIFont { get }
 }

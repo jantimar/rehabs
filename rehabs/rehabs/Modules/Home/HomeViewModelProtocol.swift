@@ -8,6 +8,10 @@
 
 import Foundation
 
+protocol HomeViewModelDelegate {
+	func startExercise()
+}
+
 protocol HomeViewModelProtocol {
-	
+	func start()
 }

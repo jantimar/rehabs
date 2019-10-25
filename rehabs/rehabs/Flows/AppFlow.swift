@@ -27,8 +27,23 @@ final class AppFlow {
 // MARK: - Setups
 private extension AppFlow {
 	func createNavigationController() {
-		let navigationController = UINavigationController()
-
+		let navigationController = UINavigationController(rootViewController: createHomeController())
+		navigationController.setNavigationBarHidden(true, animated: false)
 		self.navigationController = navigationController
+	}
+
+	func createHomeController() -> HomeViewController {
+		let viewController = HomeViewController()
+		let viewModel = HomeViewModel()
+		viewModel.delegate = self
+		viewController.viewModel = viewModel
+		return viewController
+	}
+}
+
+// MARK: - HomeViewModelDelegate
+extension AppFlow: HomeViewModelDelegate {
+	func startExercise() {
+		// TODO: Start exercise
 	}
 }

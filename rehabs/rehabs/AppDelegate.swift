@@ -21,6 +21,7 @@ final class AppDelegate: UIResponder, UIApplicationDelegate {
 
 		setupServices()
 		setupUseCase()
+		setupAppFlow()
 		setupWidnow()
 		return true
 	}

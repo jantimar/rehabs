@@ -9,9 +9,11 @@
 import Foundation
 
 final class HomeViewModel {
-
+	var delegate: HomeViewModelDelegate?
 }
 
 extension HomeViewModel: HomeViewModelProtocol {
-	
+	func start() {
+		delegate?.startExercise()
+	}
 }

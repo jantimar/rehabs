@@ -14,10 +14,12 @@ struct LightAppStyle: AppStyleProtocol {
 }
 
 struct LightColors: ColorsProtocol {
-	let primaryColor: UIColor = .mainPurple
-	let secondaryColor: UIColor = .mainBlue
+	let primary: UIColor = .mainPurple
+	let secondary: UIColor = .mainBlue
+	let title: UIColor = .white
 }
 
 struct LightFonts: FontsProtocol {
-
+	let bigButton: UIFont = UIFont.systemFont(ofSize: 42, weight: .bold).italic()
+	let title: UIFont = UIFont.systemFont(ofSize: 24, weight: .semibold).italic()
 }
