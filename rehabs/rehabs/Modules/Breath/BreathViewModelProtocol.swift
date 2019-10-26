@@ -13,5 +13,5 @@ protocol BreathViewModelDelegate {
 }
 
 protocol BreathViewModelProtocol {
-
+	func complete()
 }

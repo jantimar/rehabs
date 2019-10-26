@@ -78,14 +78,14 @@ private extension WorkoutFlow {
 // MARK: - BreathViewModelDelegate
 extension WorkoutFlow: BreathViewModelDelegate {
 	func finishedBreathExercise() {
-		navigationController?.pushViewController(createPhysicalExerciseController(), animated: true)
+		navigationController?.pushViewController(createCognitiveExerciseController(), animated: true)
 	}
 }
 
 // MARK: - PhyscalExerciseViewModelDelegate
 extension WorkoutFlow: PhyscalExerciseViewModelDelegate {
 	func finishedPhyscalExercise() {
-		navigationController?.pushViewController(createCognitiveExerciseController(), animated: true)
+		navigationController?.pushViewController(createVictoryController(), animated: true)
 	}
 
 	func showSkip() {
@@ -96,15 +96,15 @@ extension WorkoutFlow: PhyscalExerciseViewModelDelegate {
 // MARK: - CognitiveExerciseViewModelDelegate
 extension WorkoutFlow: CognitiveExerciseViewModelDelegate {
 	func finishedCognitiveExercise() {
-		navigationController?.pushViewController(createVictoryController(), animated: true)
+		navigationController?.pushViewController(createPhysicalExerciseController(), animated: true)
 	}
 }
 
 // MARK: - SkipExerciseViewModelDelegate
 extension WorkoutFlow: SkipExerciseViewModelDelegate {
-	func skipExercise() { }
+	func nextCognitive() { }
 
-	func nextWorkout() { }
+	func nextPhysical() { }
 
 	func finishExercise() {
 

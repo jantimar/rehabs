@@ -14,8 +14,8 @@ struct LightAppStyle: AppStyleProtocol {
 }
 
 struct LightColors: ColorsProtocol {
-	let primary: UIColor = .mainPurple
-	let secondary: UIColor = .mainBlue
+	let primary: UIColor = .mainRed
+	let secondary: UIColor = .mainYellow
 	let title: UIColor = .white
 }
 

@@ -16,3 +16,13 @@ final class CognitiveExerciseViewController: BaseViewController {
 		title = "CognitiveExercise VC"
 	}
 }
+
+
+enum CardType {
+	
+}
+
+final class CardView: UIView {
+
+
+}

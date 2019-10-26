@@ -10,14 +10,10 @@ import Foundation
 
 final class BreathViewModel {
 	var delegate: BreathViewModelDelegate?
-
-	init() {
-		DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-			self.delegate?.finishedBreathExercise()
-		}
-	}
 }
 
 extension BreathViewModel: BreathViewModelProtocol {
-
+	func complete() {
+		delegate?.finishedBreathExercise()
+	}
 }

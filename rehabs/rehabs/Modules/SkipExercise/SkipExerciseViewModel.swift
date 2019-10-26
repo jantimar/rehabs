@@ -13,5 +13,9 @@ final class SkipExerciseViewModel {
 }
 
 extension SkipExerciseViewModel: SkipExerciseViewModelProtocol {
+	func nextCognitive() { }
 
+	func nextPhysical() { }
+
+	func finishExercise() { }
 }

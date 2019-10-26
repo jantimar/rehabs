@@ -30,7 +30,7 @@ class BaseButton: UIButton {
 		backgroundColor = .white
 		translatesAutoresizingMaskIntoConstraints = false
 
-		setTitleColor(.mainPurple, for: .normal)
+		setTitleColor(.mainRed, for: .normal)
 	}
 }
 
