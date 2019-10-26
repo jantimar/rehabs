@@ -14,4 +14,10 @@ final class UseCaseFactory: UseCaseFactoryProtocol {
 	init(serviceFactory: ServiceFactoryProtocol) {
 		self.serviceFactory = serviceFactory
 	}
+
+	// MARK: - UseCaseFactoryProtocol
+
+	var bodyType: BodyTypeUseCaseProtocol {
+		return BodyTypeUseCase(database: serviceFactory.database)
+	}
 }

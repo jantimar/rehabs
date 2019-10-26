@@ -9,5 +9,6 @@
 import Foundation
 
 protocol DatabaseProtocol {
-	
+	func save(bodyTypes: [BodyType])
+	func fetch(bodyTypes: @escaping (Result<[BodyType], DatabaseError>) -> Void)
 }

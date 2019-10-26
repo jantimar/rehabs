@@ -9,5 +9,5 @@
 import Foundation
 
 protocol ServiceFactoryProtocol {
-	
+	var database: DatabaseProtocol { get }
 }

@@ -9,5 +9,5 @@
 import Foundation
 
 protocol UseCaseFactoryProtocol {
-	
+	var bodyType: BodyTypeUseCaseProtocol { get }
 }

@@ -9,5 +9,5 @@
 import Foundation
 
 final class ServiceFactory: ServiceFactoryProtocol {
-	
+	let database: DatabaseProtocol = Database()
 }

@@ -8,13 +8,22 @@
 
 import Foundation
 
-final class BodyTypeUseCase: BodyTypeUseCaseProtocol {
-	var types: [BodyType] {
-		get {
-			return []
-		}
-		set {
+final class BodyTypeUseCase {
+	// MARK: - Private property
+	private let database: DatabaseProtocol
 
-		}
+	init(database: DatabaseProtocol) {
+		self.database = database
+	}
+}
+
+// MARK: - BodyTypeUseCaseProtocol
+extension BodyTypeUseCase: BodyTypeUseCaseProtocol {
+	func save(types: [BodyType]) {
+		database.save(bodyTypes: types)
+	}
+
+	func load(types: @escaping (Result<[BodyType], DatabaseError>) -> Void) {
+		database.fetch(bodyTypes: types)
 	}
 }

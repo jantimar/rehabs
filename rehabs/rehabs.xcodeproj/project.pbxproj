@@ -43,6 +43,7 @@
 		A48EFA8323644FED00B9574A /* BodyTypeUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA8223644FED00B9574A /* BodyTypeUseCase.swift */; };
 		A48EFA862364513400B9574A /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA852364513400B9574A /* DatabaseProtocol.swift */; };
 		A48EFA882364513C00B9574A /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA872364513C00B9574A /* Database.swift */; };
+		A48EFA8A236453F500B9574A /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA89236453F500B9574A /* UserDefaults+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -84,6 +85,7 @@
 		A48EFA8223644FED00B9574A /* BodyTypeUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyTypeUseCase.swift; sourceTree = "<group>"; };
 		A48EFA852364513400B9574A /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
 		A48EFA872364513C00B9574A /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
+		A48EFA89236453F500B9574A /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +209,7 @@
 				A48EFA5B2363666B00B9574A /* UIColor+Extension.swift */,
 				A48EFA662363A8C600B9574A /* UIImage+Extension.swift */,
 				A48EFA682363B1A900B9574A /* UIFont+Extension.swift */,
+				A48EFA89236453F500B9574A /* UserDefaults+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 				A48EFA44236354FD00B9574A /* UseCaseFactory.swift in Sources */,
 				A48EFA8323644FED00B9574A /* BodyTypeUseCase.swift in Sources */,
 				A48EFA6F2363B54E00B9574A /* VictoryViewController.swift in Sources */,
+				A48EFA8A236453F500B9574A /* UserDefaults+Extension.swift in Sources */,
 				A48EFA78236436BE00B9574A /* SetupViewModelProtocol.swift in Sources */,
 				A48EFA3E236354CA00B9574A /* ServiceFactoryProtocol.swift in Sources */,
 				A48EFA5A2363665600B9574A /* LightAppStyle.swift in Sources */,

@@ -11,6 +11,13 @@ import Foundation
 final class SetupViewModel {
 	// MARK: - Public properties
 	var delegate: SetupViewModelDelegate?
+
+	// MARK: - Private properties
+	private var bodyType: BodyTypeUseCaseProtocol
+
+	init(bodyType: BodyTypeUseCaseProtocol) {
+		self.bodyType = bodyType
+	}
 }
 
 extension SetupViewModel: SetupViewModelProtocol {

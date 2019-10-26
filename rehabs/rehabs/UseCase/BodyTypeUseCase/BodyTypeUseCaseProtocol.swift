@@ -9,5 +9,6 @@
 import Foundation
 
 protocol BodyTypeUseCaseProtocol {
-	var types: [BodyType] { get set }
+	func save(types: [BodyType])
+	func load(types: @escaping (Result<[BodyType], DatabaseError>) -> Void)
 }

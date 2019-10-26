@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum BodyType {
+enum BodyType: String {
 	case rightArm, rightLeg, leftArm, leftLeg, core
 
 	fileprivate var image: UIImage? {

@@ -20,19 +20,28 @@ final class SetupViewController: BaseViewController {
 	override func loadView() {
 		super.loadView()
 
-		setupBodyUI()
+		setupUI()
 	}
 
 	// MARK: - Setup
-	private func setupBodyUI() {
+	private func setupUI() {
 		let body = BodyView()
 		view.addSubview(body)
-		body.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-		body.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
 
 		let saveButton = BaseButton()
 		view.addSubview(saveButton)
 		saveButton.tap = save
+		self.saveButton = saveButton
+
+		NSLayoutConstraint.activate([
+			body.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+			body.centerYAnchor.constraint(equalTo: view.centerYAnchor),
+
+			saveButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16),
+			saveButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16),
+			saveButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16),
+			saveButton.heightAnchor.constraint(equalToConstant: 40)
+		])
 	}
 }
 

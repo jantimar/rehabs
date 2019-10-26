@@ -27,8 +27,8 @@ final class AppFlow {
 // MARK: - Setups
 private extension AppFlow {
 	func createNavigationController() {
-		let navigationController = UINavigationController(rootViewController: createSetupController())
-//		let navigationController = UINavigationController(rootViewController: createTabBarController())
+//		let navigationController = UINavigationController(rootViewController: createSetupController())
+		let navigationController = UINavigationController(rootViewController: createTabBarController())
 		self.navigationController = navigationController
 	}
 
@@ -55,7 +55,7 @@ private extension AppFlow {
 
 	func createSetupController() -> SetupViewController {
 		let viewController = SetupViewController()
-		let viewModel = SetupViewModel()
+		let viewModel = SetupViewModel(bodyType: useCaseFactory.bodyType)
 		viewModel.delegate = self
 		viewController.viewModel = viewModel
 		return viewController
