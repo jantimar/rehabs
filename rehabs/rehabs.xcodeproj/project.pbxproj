@@ -44,6 +44,19 @@
 		A48EFA862364513400B9574A /* DatabaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA852364513400B9574A /* DatabaseProtocol.swift */; };
 		A48EFA882364513C00B9574A /* Database.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA872364513C00B9574A /* Database.swift */; };
 		A48EFA8A236453F500B9574A /* UserDefaults+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA89236453F500B9574A /* UserDefaults+Extension.swift */; };
+		A48EFA8D236466A400B9574A /* BreathViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA8C236466A400B9574A /* BreathViewModel.swift */; };
+		A48EFA8F236466AC00B9574A /* BreathViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA8E236466AC00B9574A /* BreathViewModelProtocol.swift */; };
+		A48EFA91236466F000B9574A /* BreathViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA90236466F000B9574A /* BreathViewController.swift */; };
+		A48EFA972364697B00B9574A /* PhyscalExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA942364693000B9574A /* PhyscalExerciseViewModel.swift */; };
+		A48EFA982364697B00B9574A /* PhyscalExerciseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA952364693000B9574A /* PhyscalExerciseViewModelProtocol.swift */; };
+		A48EFA992364697B00B9574A /* PhyscalExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA962364693000B9574A /* PhyscalExerciseViewController.swift */; };
+		A48EFA9D236469AF00B9574A /* CognitiveExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA9C2364697D00B9574A /* CognitiveExerciseViewModel.swift */; };
+		A48EFA9E236469AF00B9574A /* CognitiveExerciseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA9A2364697D00B9574A /* CognitiveExerciseViewModelProtocol.swift */; };
+		A48EFA9F236469AF00B9574A /* CognitiveExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFA9B2364697D00B9574A /* CognitiveExerciseViewController.swift */; };
+		A48EFAA223646CA600B9574A /* SkipExerciseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFAA123646CA600B9574A /* SkipExerciseViewController.swift */; };
+		A48EFAA423646CE000B9574A /* SkipExerciseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFAA323646CE000B9574A /* SkipExerciseViewModelProtocol.swift */; };
+		A48EFAA623646D5000B9574A /* SkipExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFAA523646D5000B9574A /* SkipExerciseViewModel.swift */; };
+		A48EFAA823646E6D00B9574A /* WorkoutFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFAA723646E6D00B9574A /* WorkoutFlow.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -86,6 +99,19 @@
 		A48EFA852364513400B9574A /* DatabaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseProtocol.swift; sourceTree = "<group>"; };
 		A48EFA872364513C00B9574A /* Database.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Database.swift; sourceTree = "<group>"; };
 		A48EFA89236453F500B9574A /* UserDefaults+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UserDefaults+Extension.swift"; sourceTree = "<group>"; };
+		A48EFA8C236466A400B9574A /* BreathViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewModel.swift; sourceTree = "<group>"; };
+		A48EFA8E236466AC00B9574A /* BreathViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewModelProtocol.swift; sourceTree = "<group>"; };
+		A48EFA90236466F000B9574A /* BreathViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BreathViewController.swift; sourceTree = "<group>"; };
+		A48EFA942364693000B9574A /* PhyscalExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyscalExerciseViewModel.swift; sourceTree = "<group>"; };
+		A48EFA952364693000B9574A /* PhyscalExerciseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyscalExerciseViewModelProtocol.swift; sourceTree = "<group>"; };
+		A48EFA962364693000B9574A /* PhyscalExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhyscalExerciseViewController.swift; sourceTree = "<group>"; };
+		A48EFA9A2364697D00B9574A /* CognitiveExerciseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitiveExerciseViewModelProtocol.swift; sourceTree = "<group>"; };
+		A48EFA9B2364697D00B9574A /* CognitiveExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitiveExerciseViewController.swift; sourceTree = "<group>"; };
+		A48EFA9C2364697D00B9574A /* CognitiveExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CognitiveExerciseViewModel.swift; sourceTree = "<group>"; };
+		A48EFAA123646CA600B9574A /* SkipExerciseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipExerciseViewController.swift; sourceTree = "<group>"; };
+		A48EFAA323646CE000B9574A /* SkipExerciseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipExerciseViewModelProtocol.swift; sourceTree = "<group>"; };
+		A48EFAA523646D5000B9574A /* SkipExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipExerciseViewModel.swift; sourceTree = "<group>"; };
+		A48EFAA723646E6D00B9574A /* WorkoutFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutFlow.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +181,10 @@
 		A48EFA32236353EA00B9574A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A48EFAA023646C6000B9574A /* SkipExercise */,
+				A48EFA93236468D600B9574A /* CognitiveExercise */,
+				A48EFA922364688500B9574A /* PhysicalExercise */,
+				A48EFA8B2364668E00B9574A /* Breath */,
 				A48EFA742364366000B9574A /* Setup */,
 				A48EFA6D2363B53D00B9574A /* Victory */,
 				A48EFA6A2363B3F300B9574A /* TabBar */,
@@ -218,6 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				A48EFA3B2363549600B9574A /* AppFlow.swift */,
+				A48EFAA723646E6D00B9574A /* WorkoutFlow.swift */,
 			);
 			path = Flows;
 			sourceTree = "<group>";
@@ -296,6 +327,46 @@
 			path = Database;
 			sourceTree = "<group>";
 		};
+		A48EFA8B2364668E00B9574A /* Breath */ = {
+			isa = PBXGroup;
+			children = (
+				A48EFA8C236466A400B9574A /* BreathViewModel.swift */,
+				A48EFA8E236466AC00B9574A /* BreathViewModelProtocol.swift */,
+				A48EFA90236466F000B9574A /* BreathViewController.swift */,
+			);
+			path = Breath;
+			sourceTree = "<group>";
+		};
+		A48EFA922364688500B9574A /* PhysicalExercise */ = {
+			isa = PBXGroup;
+			children = (
+				A48EFA942364693000B9574A /* PhyscalExerciseViewModel.swift */,
+				A48EFA952364693000B9574A /* PhyscalExerciseViewModelProtocol.swift */,
+				A48EFA962364693000B9574A /* PhyscalExerciseViewController.swift */,
+			);
+			path = PhysicalExercise;
+			sourceTree = "<group>";
+		};
+		A48EFA93236468D600B9574A /* CognitiveExercise */ = {
+			isa = PBXGroup;
+			children = (
+				A48EFA9C2364697D00B9574A /* CognitiveExerciseViewModel.swift */,
+				A48EFA9A2364697D00B9574A /* CognitiveExerciseViewModelProtocol.swift */,
+				A48EFA9B2364697D00B9574A /* CognitiveExerciseViewController.swift */,
+			);
+			path = CognitiveExercise;
+			sourceTree = "<group>";
+		};
+		A48EFAA023646C6000B9574A /* SkipExercise */ = {
+			isa = PBXGroup;
+			children = (
+				A48EFAA123646CA600B9574A /* SkipExerciseViewController.swift */,
+				A48EFAA323646CE000B9574A /* SkipExerciseViewModelProtocol.swift */,
+				A48EFAA523646D5000B9574A /* SkipExerciseViewModel.swift */,
+			);
+			path = SkipExercise;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -368,6 +439,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A48EFAA223646CA600B9574A /* SkipExerciseViewController.swift in Sources */,
+				A48EFA8F236466AC00B9574A /* BreathViewModelProtocol.swift in Sources */,
+				A48EFAA623646D5000B9574A /* SkipExerciseViewModel.swift in Sources */,
 				A48EFA612363A2AD00B9574A /* HomeViewModelProtocol.swift in Sources */,
 				A48EFA692363B1A900B9574A /* UIFont+Extension.swift in Sources */,
 				A48EFA542363659400B9574A /* BaseViewController.swift in Sources */,
@@ -377,24 +451,34 @@
 				A48EFA7E236447EA00B9574A /* BodyView.swift in Sources */,
 				A48EFA672363A8C600B9574A /* UIImage+Extension.swift in Sources */,
 				A48EFA7C236447CF00B9574A /* BodyButton.swift in Sources */,
+				A48EFAA423646CE000B9574A /* SkipExerciseViewModelProtocol.swift in Sources */,
+				A48EFA9E236469AF00B9574A /* CognitiveExerciseViewModelProtocol.swift in Sources */,
 				A48EFA4823635D8000B9574A /* Exercise.swift in Sources */,
 				A48EFA1E236353BC00B9574A /* AppDelegate.swift in Sources */,
 				A48EFA5C2363666B00B9574A /* UIColor+Extension.swift in Sources */,
 				A48EFA6C2363B43200B9574A /* TabBarViewController.swift in Sources */,
+				A48EFA9D236469AF00B9574A /* CognitiveExerciseViewModel.swift in Sources */,
+				A48EFA972364697B00B9574A /* PhyscalExerciseViewModel.swift in Sources */,
 				A48EFA8123644FDE00B9574A /* BodyTypeUseCaseProtocol.swift in Sources */,
 				A48EFA712363B56E00B9574A /* VictoryViewModelProtocol.swift in Sources */,
 				A48EFA3C2363549600B9574A /* AppFlow.swift in Sources */,
 				A48EFA732363B58600B9574A /* VictoryViewModel.swift in Sources */,
 				A48EFA42236354F100B9574A /* UseCaseFactoryProtocol.swift in Sources */,
+				A48EFA992364697B00B9574A /* PhyscalExerciseViewController.swift in Sources */,
+				A48EFA9F236469AF00B9574A /* CognitiveExerciseViewController.swift in Sources */,
 				A48EFA4A23635E0D00B9574A /* Category.swift in Sources */,
 				A48EFA4623635CCD00B9574A /* Constants.swift in Sources */,
+				A48EFA8D236466A400B9574A /* BreathViewModel.swift in Sources */,
 				A48EFA5F2363A29600B9574A /* HomeViewModel.swift in Sources */,
 				A48EFA632363A2EB00B9574A /* HomeViewController.swift in Sources */,
 				A48EFA44236354FD00B9574A /* UseCaseFactory.swift in Sources */,
+				A48EFAA823646E6D00B9574A /* WorkoutFlow.swift in Sources */,
 				A48EFA8323644FED00B9574A /* BodyTypeUseCase.swift in Sources */,
+				A48EFA91236466F000B9574A /* BreathViewController.swift in Sources */,
 				A48EFA6F2363B54E00B9574A /* VictoryViewController.swift in Sources */,
 				A48EFA8A236453F500B9574A /* UserDefaults+Extension.swift in Sources */,
 				A48EFA78236436BE00B9574A /* SetupViewModelProtocol.swift in Sources */,
+				A48EFA982364697B00B9574A /* PhyscalExerciseViewModelProtocol.swift in Sources */,
 				A48EFA3E236354CA00B9574A /* ServiceFactoryProtocol.swift in Sources */,
 				A48EFA5A2363665600B9574A /* LightAppStyle.swift in Sources */,
 				A48EFA652363A70E00B9574A /* BaseButton.swift in Sources */,

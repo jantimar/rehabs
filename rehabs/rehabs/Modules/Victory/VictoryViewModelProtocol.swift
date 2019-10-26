@@ -8,6 +8,10 @@
 
 import Foundation
 
+protocol VictoryViewModelDelegate {
+	func closeWorkout()
+}
+
 protocol VictoryViewModelProtocol {
-	
+	func close()
 }

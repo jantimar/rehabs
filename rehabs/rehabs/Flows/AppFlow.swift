@@ -15,6 +15,8 @@ final class AppFlow {
 	private let serviceFactory: ServiceFactoryProtocol
 	private let useCaseFactory: UseCaseFactoryProtocol
 
+	private var workoutFlow: WorkoutFlow?
+
 	init(serviceFactory: ServiceFactoryProtocol,
 		 useCaseFactory: UseCaseFactoryProtocol) {
 		self.serviceFactory = serviceFactory
@@ -27,8 +29,8 @@ final class AppFlow {
 // MARK: - Setups
 private extension AppFlow {
 	func createNavigationController() {
-//		let navigationController = UINavigationController(rootViewController: createSetupController())
 		let navigationController = UINavigationController(rootViewController: createTabBarController())
+		navigationController.navigationBar.tintColor = .white
 		self.navigationController = navigationController
 	}
 
@@ -45,34 +47,25 @@ private extension AppFlow {
 		tabBarController.viewControllers = [createHomeController()]
 		return tabBarController
 	}
-
-	func createVictoryController() -> VictoryViewController {
-		let viewController = VictoryViewController()
-		let viewModel = VictoryViewModel()
-		viewController.viewModel = viewModel
-		return viewController
-	}
-
-	func createSetupController() -> SetupViewController {
-		let viewController = SetupViewController()
-		let viewModel = SetupViewModel(bodyType: useCaseFactory.bodyType)
-		viewModel.delegate = self
-		viewController.viewModel = viewModel
-		return viewController
-	}
 }
 
 // MARK: - HomeViewModelDelegate
 extension AppFlow: HomeViewModelDelegate {
 	func startExercise() {
-		// TODO: Start exercise
-		navigationController?.pushViewController(createVictoryController(), animated: true)
+		let workoutFlow = WorkoutFlow(navigationController: navigationController,
+									  serviceFactory: serviceFactory,
+									  useCaseFactory: useCaseFactory)
+		workoutFlow.start()
+		workoutFlow.delegate = self
+		self.workoutFlow = workoutFlow
 	}
 }
 
-// MARK: - SetupViewModelDelegate
-extension AppFlow: SetupViewModelDelegate {
-	func finished() {
-		navigationController?.setViewControllers([createTabBarController()], animated: true)
+// MARK: - WorkoutFlowDelegate
+extension AppFlow: WorkoutFlowDelegate {
+	func closeWorkoutFlow() {
+		guard let homeViewController = navigationController?.viewControllers.first else { return }
+		workoutFlow = nil
+		navigationController?.setViewControllers([homeViewController], animated: true)
 	}
 }

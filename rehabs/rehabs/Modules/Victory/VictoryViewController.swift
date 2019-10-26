@@ -13,6 +13,7 @@ final class VictoryViewController: BaseViewController {
 
 	// MARK: - IBOutlets
 	private var titleLabel: UILabel?
+	private var doneButton: BaseButton?
 
  // MARK: - Lifecycle
 	override func loadView() {
@@ -37,9 +38,17 @@ final class VictoryViewController: BaseViewController {
 		titleLabel.text = "Good job"
 		titleLabel.textAlignment = .center
 		self.titleLabel = titleLabel
+
+		let doneButton = BaseButton()
+		view.addSubview(doneButton)
+		doneButton.leftAnchor.constraint(equalTo: view.leftAnchor, constant: 16).isActive = true
+		doneButton.rightAnchor.constraint(equalTo: view.rightAnchor, constant: -16).isActive = true
+		doneButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -16).isActive = true
+		doneButton.heightAnchor.constraint(equalToConstant: 40).isActive = true
+		self.doneButton = doneButton
 	}
 
 	private func setupViewModel() {
-
+		doneButton?.tap = viewModel?.close
 	}
 }

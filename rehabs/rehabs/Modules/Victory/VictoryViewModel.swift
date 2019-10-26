@@ -9,10 +9,12 @@
 import UIKit
 
 final class VictoryViewModel {
-
+	var delegate: VictoryViewModelDelegate?
 }
 
 // MARK: - VictoryViewModelProtocol
 extension VictoryViewModel: VictoryViewModelProtocol {
-
+	func close() {
+		delegate?.closeWorkout()
+	}
 }

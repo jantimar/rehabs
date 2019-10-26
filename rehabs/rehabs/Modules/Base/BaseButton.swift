@@ -29,6 +29,8 @@ class BaseButton: UIButton {
 		clipsToBounds = true
 		backgroundColor = .white
 		translatesAutoresizingMaskIntoConstraints = false
+
+		setTitleColor(.mainPurple, for: .normal)
 	}
 }
 
