@@ -20,17 +20,19 @@ final class HomeViewController: BaseViewController {
 		super.loadView()
 
 		setupUI()
+		setupViewModel()
 	}
 
 	// MARK: - Setups
 	private func setupUI() {
+		tabBarItem.title = "Home"
+
 		// Save button
 		let startButton = BaseButton()
 		view.addSubview(startButton)
-		startButton.translatesAutoresizingMaskIntoConstraints = false
 		startButton.widthAnchor.constraint(equalToConstant: 200).isActive = true
 		startButton.heightAnchor.constraint(equalToConstant: 200).isActive = true
-		startButton.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -100).isActive = true
+		startButton.bottomAnchor.constraint(equalTo: view.safeAreaLayoutGuide.bottomAnchor, constant: -100).isActive = true
 		startButton.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
 		startButton.layer.cornerRadius = 100
 		startButton.setTitle("Start", for: .normal)

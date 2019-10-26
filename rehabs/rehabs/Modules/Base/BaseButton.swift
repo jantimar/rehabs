@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class BaseButton: UIButton {
+class BaseButton: UIButton {
 	// MARK: - Public properties
 	var tap: (() -> Void)?
 
@@ -20,7 +20,7 @@ final class BaseButton: UIButton {
 	}
 
 	// MARK: - Setups
-	private func setupActions() {
+	func setupActions() {
 		addTarget(self, action: #selector(pressButton), for: .touchUpInside)
 	}
 
@@ -28,6 +28,7 @@ final class BaseButton: UIButton {
 		layer.cornerRadius = 8
 		clipsToBounds = true
 		backgroundColor = .white
+		translatesAutoresizingMaskIntoConstraints = false
 	}
 }
 

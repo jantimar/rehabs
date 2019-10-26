@@ -27,8 +27,8 @@ final class AppFlow {
 // MARK: - Setups
 private extension AppFlow {
 	func createNavigationController() {
-		let navigationController = UINavigationController(rootViewController: createHomeController())
-		navigationController.setNavigationBarHidden(true, animated: false)
+		let navigationController = UINavigationController(rootViewController: createSetupController())
+//		let navigationController = UINavigationController(rootViewController: createTabBarController())
 		self.navigationController = navigationController
 	}
 
@@ -39,11 +39,40 @@ private extension AppFlow {
 		viewController.viewModel = viewModel
 		return viewController
 	}
+
+	func createTabBarController() -> TabBarViewController {
+		let tabBarController = TabBarViewController()
+		tabBarController.viewControllers = [createHomeController()]
+		return tabBarController
+	}
+
+	func createVictoryController() -> VictoryViewController {
+		let viewController = VictoryViewController()
+		let viewModel = VictoryViewModel()
+		viewController.viewModel = viewModel
+		return viewController
+	}
+
+	func createSetupController() -> SetupViewController {
+		let viewController = SetupViewController()
+		let viewModel = SetupViewModel()
+		viewModel.delegate = self
+		viewController.viewModel = viewModel
+		return viewController
+	}
 }
 
 // MARK: - HomeViewModelDelegate
 extension AppFlow: HomeViewModelDelegate {
 	func startExercise() {
 		// TODO: Start exercise
+		navigationController?.pushViewController(createVictoryController(), animated: true)
+	}
+}
+
+// MARK: - SetupViewModelDelegate
+extension AppFlow: SetupViewModelDelegate {
+	func finished() {
+		navigationController?.setViewControllers([createTabBarController()], animated: true)
 	}
 }
