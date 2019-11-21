@@ -17,4 +17,12 @@ extension VictoryViewModel: VictoryViewModelProtocol {
 	func close() {
 		delegate?.closeWorkout()
 	}
+
+	func nextCognitive() {
+		delegate?.nextCognitive()
+	}
+
+	func nextPhysical() {
+		delegate?.nextPhysical()
+	}
 }

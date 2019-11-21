@@ -9,9 +9,13 @@
 import Foundation
 
 protocol VictoryViewModelDelegate {
+	func nextCognitive()
+	func nextPhysical()
 	func closeWorkout()
 }
 
 protocol VictoryViewModelProtocol {
+	func nextCognitive()
+	func nextPhysical()
 	func close()
 }

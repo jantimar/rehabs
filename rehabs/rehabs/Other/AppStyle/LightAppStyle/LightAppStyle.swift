@@ -21,5 +21,5 @@ struct LightColors: ColorsProtocol {
 
 struct LightFonts: FontsProtocol {
 	let bigButton: UIFont = UIFont.systemFont(ofSize: 42, weight: .bold).italic()
-	let title: UIFont = UIFont.systemFont(ofSize: 24, weight: .semibold).italic()
+	let title: UIFont = UIFont.systemFont(ofSize: 18, weight: .semibold).italic()
 }

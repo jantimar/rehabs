@@ -15,4 +15,5 @@ protocol PhyscalExerciseViewModelDelegate {
 
 protocol PhyscalExerciseViewModelProtocol {
 	func skip()
+	func finish()
 }

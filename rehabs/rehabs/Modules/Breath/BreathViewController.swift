@@ -12,7 +12,7 @@ final class BreathViewController: BaseViewController {
 	var viewModel: BreathViewModelProtocol?
 	// MARK: - IBOutlets
 	private var titleLabel: UILabel?
-	private var counterLabel: UILabel?
+	private var startLabel: StartLabel?
 	private var circleView: UIView?
 
 	override func loadView() {
@@ -24,7 +24,7 @@ final class BreathViewController: BaseViewController {
 	override func viewDidLoad() {
 		super.viewDidLoad()
 
-		startAnimation(count: 3)
+		startLabel?.startAnimation(count: 3)
 	}
 
 	// MARK: - Setups
@@ -38,19 +38,17 @@ final class BreathViewController: BaseViewController {
 		titleLabel.rightAnchor.constraint(equalTo: view.rightAnchor, constant: 16).isActive = true
 		titleLabel.textColor = appStyle.colors.title
 		titleLabel.font = appStyle.fonts.title
-		titleLabel.text = "Let's breathing exercise"
+		titleLabel.numberOfLines = 2
+		titleLabel.text = "Let's start with\nbreathing exercise"
 		titleLabel.textAlignment = .center
 		self.titleLabel = titleLabel
 
-		let counterLabel = UILabel()
-		view.addSubview(counterLabel)
-		counterLabel.translatesAutoresizingMaskIntoConstraints = false
-		counterLabel.textColor = appStyle.colors.title
-		counterLabel.font = UIFont.systemFont(ofSize: 90, weight: .bold).italic()
-		counterLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
-		counterLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
-		counterLabel.alpha = 0
-		self.counterLabel = counterLabel
+		let startLabel = StartLabel(count: 3)
+		view.addSubview(startLabel)
+		startLabel.textColor = appStyle.colors.title
+		startLabel.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+		startLabel.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+		self.startLabel = startLabel
 
 		let circleView = UIView(frame: .zero)
 		circleView.translatesAutoresizingMaskIntoConstraints = false
@@ -63,41 +61,28 @@ final class BreathViewController: BaseViewController {
 		circleView.backgroundColor = .white
 		circleView.layer.cornerRadius = 110
 		self.circleView = circleView
-	}
 
-	private func startAnimation(count: Int) {
-		guard count > 0 else {
-			circleView?.transform = CGAffineTransform(scaleX: 0.4, y: 0.4)
+		startLabel.done = {
+			circleView.transform = CGAffineTransform(scaleX: 0.4, y: 0.4)
 			UIView.animate(withDuration: 0.3, animations: {
 				self.circleView?.alpha = 0.3
 			}, completion: { _ in
-				self.breathAnimation(count: 3)
+				self.breathAnimation(count: 2)
 			})
-			return
 		}
-
-		counterLabel?.text = "\(count)"
-		counterLabel?.transform = CGAffineTransform(scaleX: 0.1, y: 0.1)
-		counterLabel?.alpha = 1
-		UIView.animate(withDuration: 1, animations: {
-			self.counterLabel?.transform = .identity
-			self.counterLabel?.alpha = 0
-		}, completion: { _ in
-			self.startAnimation(count: count - 1)
-		})
 	}
 
 	private func breathAnimation(count: Int) {
-		guard count >= 0 else {
+		guard count > 0 else {
 			viewModel?.complete()
 			return
 		}
 
-		UIView.animate(withDuration: 3, delay: 0.7, options: .curveEaseInOut, animations: { // In
+		UIView.animate(withDuration: 2, delay: 0.4, options: .curveEaseInOut, animations: { // In
 			self.circleView?.transform = .identity
 			self.circleView?.alpha = 0.9
 		}) { _ in
-			UIView.animate(withDuration: 3, delay: 0.7, options: .curveEaseInOut, animations: { // Out
+			UIView.animate(withDuration: 2, delay: 0.4, options: .curveEaseInOut, animations: { // Out
 				self.circleView?.transform = CGAffineTransform(scaleX: 0.4, y: 0.4)
 				self.circleView?.alpha = 0.3
 			}) { complete in

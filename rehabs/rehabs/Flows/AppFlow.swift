@@ -31,12 +31,14 @@ private extension AppFlow {
 	func createNavigationController() {
 		let navigationController = UINavigationController(rootViewController: createTabBarController())
 		navigationController.navigationBar.tintColor = .white
+		navigationController.setNavigationBarHidden(true, animated: false)
 		self.navigationController = navigationController
 	}
 
 	func createHomeController() -> HomeViewController {
 		let viewController = HomeViewController()
 		let viewModel = HomeViewModel()
+		viewController.tabBarItem.image = .home
 		viewModel.delegate = self
 		viewController.viewModel = viewModel
 		return viewController
@@ -44,8 +46,29 @@ private extension AppFlow {
 
 	func createTabBarController() -> TabBarViewController {
 		let tabBarController = TabBarViewController()
-		tabBarController.viewControllers = [createHomeController()]
+		tabBarController.viewControllers = [createHomeController(),
+											createChatController(),
+											createStatsController(),
+											createProfileController()]
 		return tabBarController
+	}
+
+	func createChatController() -> ChatViewController {
+		let viewController = ChatViewController()
+		viewController.tabBarItem.image = .messages
+		return viewController
+	}
+
+	func createStatsController() -> StatsViewController {
+		let viewController = StatsViewController()
+		viewController.tabBarItem.image = .progress
+		return viewController
+	}
+
+	func createProfileController() -> ProfileViewController {
+		let viewController = ProfileViewController()
+		viewController.tabBarItem.image = .profile
+		return viewController
 	}
 }
 

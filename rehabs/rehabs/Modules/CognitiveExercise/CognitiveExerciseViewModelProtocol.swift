@@ -13,5 +13,5 @@ protocol CognitiveExerciseViewModelDelegate {
 }
 
 protocol CognitiveExerciseViewModelProtocol {
-
+	func finish()
 }

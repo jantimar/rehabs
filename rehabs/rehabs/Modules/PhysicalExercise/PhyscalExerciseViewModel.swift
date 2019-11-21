@@ -10,16 +10,14 @@ import Foundation
 
 final class PhyscalExerciseViewModel {
 	var delegate: PhyscalExerciseViewModelDelegate?
-
-//	init() {
-//		DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-//			self.delegate?.finishedPhyscalExercise()
-//		}
-//	}
 }
 
 extension PhyscalExerciseViewModel: PhyscalExerciseViewModelProtocol {
 	func skip() {
-		delegate?.showSkip()
+		delegate?.finishedPhyscalExercise()
+	}
+
+	func finish() {
+		delegate?.finishedPhyscalExercise()
 	}
 }

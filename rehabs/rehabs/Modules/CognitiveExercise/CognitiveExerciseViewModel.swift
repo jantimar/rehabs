@@ -10,14 +10,10 @@ import Foundation
 
 final class CognitiveExerciseViewModel {
 	var delegate: CognitiveExerciseViewModelDelegate?
-
-//	init() {
-//		DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
-//			self.delegate?.finishedCognitiveExercise()
-//		}
-//	}
 }
 
 extension CognitiveExerciseViewModel: CognitiveExerciseViewModelProtocol {
-
+	func finish() {
+		delegate?.finishedCognitiveExercise()
+	}
 }

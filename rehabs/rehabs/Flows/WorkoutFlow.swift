@@ -73,6 +73,12 @@ private extension WorkoutFlow {
 		viewController.viewModel = viewModel
 		return viewController
 	}
+
+	func createAchievmentController() -> AchievmentViewController {
+		let viewController = AchievmentViewController()
+		viewController.delegate = self
+		return viewController
+	}
 }
 
 // MARK: - BreathViewModelDelegate
@@ -102,9 +108,13 @@ extension WorkoutFlow: CognitiveExerciseViewModelDelegate {
 
 // MARK: - SkipExerciseViewModelDelegate
 extension WorkoutFlow: SkipExerciseViewModelDelegate {
-	func nextCognitive() { }
+	func nextCognitive() {
+		navigationController?.pushViewController(createCognitiveExerciseController(), animated: true)
+	}
 
-	func nextPhysical() { }
+	func nextPhysical() {
+		navigationController?.pushViewController(createPhysicalExerciseController(), animated: true)
+	}
 
 	func finishExercise() {
 
@@ -114,6 +124,13 @@ extension WorkoutFlow: SkipExerciseViewModelDelegate {
 // MARK: - VictoryViewModelDelegate
 extension WorkoutFlow: VictoryViewModelDelegate {
 	func closeWorkout() {
+		navigationController?.pushViewController(createAchievmentController(), animated: true)
+	}
+}
+
+// MARK: - AchievmentDelegate
+extension WorkoutFlow: AchievmentDelegate {
+	func closeAchievment() {
 		delegate?.closeWorkoutFlow()
 	}
 }

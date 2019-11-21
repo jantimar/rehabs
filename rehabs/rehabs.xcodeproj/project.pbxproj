@@ -57,10 +57,18 @@
 		A48EFAA423646CE000B9574A /* SkipExerciseViewModelProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFAA323646CE000B9574A /* SkipExerciseViewModelProtocol.swift */; };
 		A48EFAA623646D5000B9574A /* SkipExerciseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFAA523646D5000B9574A /* SkipExerciseViewModel.swift */; };
 		A48EFAA823646E6D00B9574A /* WorkoutFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A48EFAA723646E6D00B9574A /* WorkoutFlow.swift */; };
+		A4DEE7932364B69E00A6FFED /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEE7922364B69E00A6FFED /* CardView.swift */; };
+		A4DEE7952364B6C600A6FFED /* StartLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEE7942364B6C600A6FFED /* StartLabel.swift */; };
+		A4DEE79A2364E54700A6FFED /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEE7992364E54700A6FFED /* ChatViewController.swift */; };
+		A4DEE79F2364E7DB00A6FFED /* StatsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEE79E2364E7DB00A6FFED /* StatsViewController.swift */; };
+		A4DEE7A22364E83400A6FFED /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEE7A12364E83400A6FFED /* ProfileViewController.swift */; };
+		A4DEE7A52365843400A6FFED /* AchievmentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEE7A42365843400A6FFED /* AchievmentViewController.swift */; };
+		A4DEE7A723658B0D00A6FFED /* ChatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4DEE7A623658B0D00A6FFED /* ChatTableViewCell.swift */; };
+		A4DEE7A923659D7D00A6FFED /* IMG_0115.MOV in Resources */ = {isa = PBXBuildFile; fileRef = A4DEE7A823659D7D00A6FFED /* IMG_0115.MOV */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		A48EFA1A236353BC00B9574A /* Mentor.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mentor.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A48EFA1A236353BC00B9574A /* Bridge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Bridge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A48EFA1D236353BC00B9574A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A48EFA23236353C100B9574A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A48EFA26236353C100B9574A /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -112,6 +120,14 @@
 		A48EFAA323646CE000B9574A /* SkipExerciseViewModelProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipExerciseViewModelProtocol.swift; sourceTree = "<group>"; };
 		A48EFAA523646D5000B9574A /* SkipExerciseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkipExerciseViewModel.swift; sourceTree = "<group>"; };
 		A48EFAA723646E6D00B9574A /* WorkoutFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutFlow.swift; sourceTree = "<group>"; };
+		A4DEE7922364B69E00A6FFED /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		A4DEE7942364B6C600A6FFED /* StartLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartLabel.swift; sourceTree = "<group>"; };
+		A4DEE7992364E54700A6FFED /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		A4DEE79E2364E7DB00A6FFED /* StatsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsViewController.swift; sourceTree = "<group>"; };
+		A4DEE7A12364E83400A6FFED /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		A4DEE7A42365843400A6FFED /* AchievmentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievmentViewController.swift; sourceTree = "<group>"; };
+		A4DEE7A623658B0D00A6FFED /* ChatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatTableViewCell.swift; sourceTree = "<group>"; };
+		A4DEE7A823659D7D00A6FFED /* IMG_0115.MOV */ = {isa = PBXFileReference; lastKnownFileType = video.quicktime; path = IMG_0115.MOV; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -136,7 +152,7 @@
 		A48EFA1B236353BC00B9574A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A48EFA1A236353BC00B9574A /* Mentor.app */,
+				A48EFA1A236353BC00B9574A /* Bridge.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -173,6 +189,7 @@
 				A48EFA23236353C100B9574A /* Assets.xcassets */,
 				A48EFA28236353C100B9574A /* LaunchScreen.storyboard */,
 				A48EFA372363544700B9574A /* Localizable.strings */,
+				A4DEE7A823659D7D00A6FFED /* IMG_0115.MOV */,
 				A48EFA4523635CCD00B9574A /* Constants.swift */,
 			);
 			path = Other;
@@ -181,6 +198,10 @@
 		A48EFA32236353EA00B9574A /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A4DEE7A32365842900A6FFED /* Achievment */,
+				A4DEE7A02364E82C00A6FFED /* Profile */,
+				A4DEE79D2364E7CF00A6FFED /* Stats */,
+				A4DEE7982364E53700A6FFED /* Chat */,
 				A48EFAA023646C6000B9574A /* SkipExercise */,
 				A48EFA93236468D600B9574A /* CognitiveExercise */,
 				A48EFA922364688500B9574A /* PhysicalExercise */,
@@ -258,6 +279,7 @@
 			children = (
 				A48EFA532363659400B9574A /* BaseViewController.swift */,
 				A48EFA642363A70E00B9574A /* BaseButton.swift */,
+				A4DEE7942364B6C600A6FFED /* StartLabel.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -353,6 +375,7 @@
 				A48EFA9C2364697D00B9574A /* CognitiveExerciseViewModel.swift */,
 				A48EFA9A2364697D00B9574A /* CognitiveExerciseViewModelProtocol.swift */,
 				A48EFA9B2364697D00B9574A /* CognitiveExerciseViewController.swift */,
+				A4DEE7922364B69E00A6FFED /* CardView.swift */,
 			);
 			path = CognitiveExercise;
 			sourceTree = "<group>";
@@ -365,6 +388,39 @@
 				A48EFAA523646D5000B9574A /* SkipExerciseViewModel.swift */,
 			);
 			path = SkipExercise;
+			sourceTree = "<group>";
+		};
+		A4DEE7982364E53700A6FFED /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				A4DEE7992364E54700A6FFED /* ChatViewController.swift */,
+				A4DEE7A623658B0D00A6FFED /* ChatTableViewCell.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		A4DEE79D2364E7CF00A6FFED /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				A4DEE79E2364E7DB00A6FFED /* StatsViewController.swift */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		A4DEE7A02364E82C00A6FFED /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+				A4DEE7A12364E83400A6FFED /* ProfileViewController.swift */,
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A4DEE7A32365842900A6FFED /* Achievment */ = {
+			isa = PBXGroup;
+			children = (
+				A4DEE7A42365843400A6FFED /* AchievmentViewController.swift */,
+			);
+			path = Achievment;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -384,7 +440,7 @@
 			);
 			name = rehabs;
 			productName = rehabs;
-			productReference = A48EFA1A236353BC00B9574A /* Mentor.app */;
+			productReference = A48EFA1A236353BC00B9574A /* Bridge.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -429,6 +485,7 @@
 				A48EFA382363544700B9574A /* Localizable.strings in Resources */,
 				A48EFA27236353C100B9574A /* Preview Assets.xcassets in Resources */,
 				A48EFA24236353C100B9574A /* Assets.xcassets in Resources */,
+				A4DEE7A923659D7D00A6FFED /* IMG_0115.MOV in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -442,6 +499,7 @@
 				A48EFAA223646CA600B9574A /* SkipExerciseViewController.swift in Sources */,
 				A48EFA8F236466AC00B9574A /* BreathViewModelProtocol.swift in Sources */,
 				A48EFAA623646D5000B9574A /* SkipExerciseViewModel.swift in Sources */,
+				A4DEE79A2364E54700A6FFED /* ChatViewController.swift in Sources */,
 				A48EFA612363A2AD00B9574A /* HomeViewModelProtocol.swift in Sources */,
 				A48EFA692363B1A900B9574A /* UIFont+Extension.swift in Sources */,
 				A48EFA542363659400B9574A /* BaseViewController.swift in Sources */,
@@ -454,15 +512,19 @@
 				A48EFAA423646CE000B9574A /* SkipExerciseViewModelProtocol.swift in Sources */,
 				A48EFA9E236469AF00B9574A /* CognitiveExerciseViewModelProtocol.swift in Sources */,
 				A48EFA4823635D8000B9574A /* Exercise.swift in Sources */,
+				A4DEE7932364B69E00A6FFED /* CardView.swift in Sources */,
 				A48EFA1E236353BC00B9574A /* AppDelegate.swift in Sources */,
+				A4DEE79F2364E7DB00A6FFED /* StatsViewController.swift in Sources */,
 				A48EFA5C2363666B00B9574A /* UIColor+Extension.swift in Sources */,
 				A48EFA6C2363B43200B9574A /* TabBarViewController.swift in Sources */,
 				A48EFA9D236469AF00B9574A /* CognitiveExerciseViewModel.swift in Sources */,
 				A48EFA972364697B00B9574A /* PhyscalExerciseViewModel.swift in Sources */,
 				A48EFA8123644FDE00B9574A /* BodyTypeUseCaseProtocol.swift in Sources */,
+				A4DEE7A22364E83400A6FFED /* ProfileViewController.swift in Sources */,
 				A48EFA712363B56E00B9574A /* VictoryViewModelProtocol.swift in Sources */,
 				A48EFA3C2363549600B9574A /* AppFlow.swift in Sources */,
 				A48EFA732363B58600B9574A /* VictoryViewModel.swift in Sources */,
+				A4DEE7A52365843400A6FFED /* AchievmentViewController.swift in Sources */,
 				A48EFA42236354F100B9574A /* UseCaseFactoryProtocol.swift in Sources */,
 				A48EFA992364697B00B9574A /* PhyscalExerciseViewController.swift in Sources */,
 				A48EFA9F236469AF00B9574A /* CognitiveExerciseViewController.swift in Sources */,
@@ -473,12 +535,14 @@
 				A48EFA632363A2EB00B9574A /* HomeViewController.swift in Sources */,
 				A48EFA44236354FD00B9574A /* UseCaseFactory.swift in Sources */,
 				A48EFAA823646E6D00B9574A /* WorkoutFlow.swift in Sources */,
+				A4DEE7A723658B0D00A6FFED /* ChatTableViewCell.swift in Sources */,
 				A48EFA8323644FED00B9574A /* BodyTypeUseCase.swift in Sources */,
 				A48EFA91236466F000B9574A /* BreathViewController.swift in Sources */,
 				A48EFA6F2363B54E00B9574A /* VictoryViewController.swift in Sources */,
 				A48EFA8A236453F500B9574A /* UserDefaults+Extension.swift in Sources */,
 				A48EFA78236436BE00B9574A /* SetupViewModelProtocol.swift in Sources */,
 				A48EFA982364697B00B9574A /* PhyscalExerciseViewModelProtocol.swift in Sources */,
+				A4DEE7952364B6C600A6FFED /* StartLabel.swift in Sources */,
 				A48EFA3E236354CA00B9574A /* ServiceFactoryProtocol.swift in Sources */,
 				A48EFA5A2363665600B9574A /* LightAppStyle.swift in Sources */,
 				A48EFA652363A70E00B9574A /* BaseButton.swift in Sources */,
@@ -620,17 +684,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"rehabs/Preview Content\"";
-				DEVELOPMENT_TEAM = 9Q6922742Y;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = rehabs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sk.jantimar.rehabs;
-				PRODUCT_NAME = Mentor;
+				PRODUCT_NAME = Bridge;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -640,17 +707,20 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"rehabs/Preview Content\"";
-				DEVELOPMENT_TEAM = 9Q6922742Y;
+				DEVELOPMENT_TEAM = "";
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = rehabs/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = sk.jantimar.rehabs;
-				PRODUCT_NAME = Mentor;
+				PRODUCT_NAME = Bridge;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
